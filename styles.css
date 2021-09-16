@@ -58,21 +58,27 @@ body{
 
 .card>input{
     margin:40px;
-    color:hsl(0, 0%, 95%);
+    color: transperent;
     font-family: 'Lexend Deca';
-    font-size: 15px;
+    font-size: 16px;
     position: relative;
-    background-color: transparent;
-    border: 2px solid;
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid white;
     border-radius:26px;
     padding-left:20px;
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+    mix-blend-mode:color-dodge;
 }
-
+.input::before {
+    content: '';
+    mix-blend-mode:color-burn;
+  }
 input:hover{
     cursor: pointer;
+    color:hsl(0, 0%, 95%);
+    background-color: transparent;
 }
 
 .content{
