@@ -69,7 +69,7 @@ body{
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    mix-blend-mode:color-dodge;
+    mix-blend-mode:screen;
 }
 .input::before {
     content: '';
